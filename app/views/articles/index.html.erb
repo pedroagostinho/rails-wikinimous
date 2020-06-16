@@ -2,7 +2,14 @@
 <div class="body">
   <ul style="list-style-type:none;">
   <% @articles.each do |article| %>
-    <li> <h2> <%= link_to(article.title.capitalize, article_path(article)) %> </h2>  <p> <%= article.content.capitalize %> </p> </li>
+    <li>
+      <h2>
+        <%= link_to(article.title.capitalize, article_path(article)) %>
+      </h2>
+      <p>
+        <%= article.content.capitalize %>
+      </p>
+    </li>
   <% end %>
   </ul>
 </div>
